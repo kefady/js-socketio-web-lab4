@@ -1,0 +1,66 @@
+.container {
+    height: 100vh;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 1.5rem;
+}
+
+.form {
+    display: flex;
+    z-index: 10;
+    position: relative;
+    width: 500px;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.form > * {
+    border: 0;
+    padding: 0 0 0 10px;
+    background: #ffffff;
+    line-height: 50px;
+    font-size: 1rem;
+    border-radius: 0;
+    outline: 0;
+}
+
+.btnSubmit {
+    background: #4361ee;
+    color: #ffffff;
+    padding: 0 30px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btnSubmit:hover {
+    background: #4387ee;
+}
+
+.btnSubmit:disabled {
+    background: #495057;
+    border: 1px solid #495057;
+    cursor: default;
+}
+
+.textInput {
+    flex-basis: 500px;
+}
+
+.error {
+    max-width: 500px;
+    color: red;
+    margin-top: 10px;
+}
+
+.logoText {
+    color: #4361ee;
+}
