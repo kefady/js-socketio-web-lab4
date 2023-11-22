@@ -2,9 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 
 import classes from "./HomePage.module.css";
-import {wait} from "@testing-library/user-event/dist/utils";
 
-const USERNAME_REGEX = /^[a-zA-Z0-9]+$/;
+const USERNAME_REGEX = /^[a-zA-Z0-9_]+$/;
 
 const HomePage = ({ socket }) => {
     const navigate = useNavigate();
